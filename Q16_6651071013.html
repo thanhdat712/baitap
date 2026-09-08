@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Sử dụng tag <title> theo yêu cầu -->
+    <title>Bài tập tổng hợp</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 800px; margin: 0 auto; }
+        td { border: 1px solid #ccc; padding: 10px; vertical-align: top; }
+        .menu-link { text-decoration: none; color: blue; }
+        .menu-link:hover { text-decoration: underline; }
+        .section-title { background-color: #0055A5; color: white; font-weight: bold; padding: 5px; }
+        .back-to-top { text-align: right; font-size: 14px; margin-top: 10px; }
+        ul { list-style-type: circle; }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Dòng 1: Tiêu đề và hình ảnh -->
+        <tr>
+            <td colspan="2" style="position: relative; height: 120px; border: none;">
+                <!-- Đánh dấu vị trí đầu trang -->
+                <a name="vedau"></a>
+                <!-- Tag <img> với các thuộc tính theo hướng dẫn giải -->
+                <img src="banner.jpg" align="left" style="z-index:-1; position:absolute; top:0; left:0; width: 100%; height: 100%;" alt="Banner Ai? Cái gì? Ở đâu?">
+            </td>
+        </tr>
+
+        <!-- Dòng 2: Menu trái và Tiêu đề Tình yêu -->
+        <tr>
+            <!-- Ô bên trái chứa menu, gộp 14 dòng còn lại -->
+            <td rowspan="14" width="25%">
+                <ul style="list-style-type: circle; padding-left: 20px;">
+                    <li><a href="#tinhyeu" class="menu-link">Tình yêu và gia đình</a></li>
+                    <li><a href="#suckhoe" class="menu-link">Sức khỏe</a></li>
+                    <li><a href="#dulich" class="menu-link">Du lịch</a></li>
+                    <li><a href="#amthuc" class="menu-link">Ẩm thực</a></li>
+                    <li><a href="#amnhac" class="menu-link">Âm nhạc</a></li>
+                </ul>
+            </td>
+            <!-- Ô bên phải: Bắt đầu nội dung chi tiết -->
+            <td class="section-title">
+                <a name="tinhyeu"><font color="white">Tình yêu và gia đình</font></a>
+            </td>
+        </tr>
+        
+        <!-- Dòng 3 -->
+        <tr>
+            <td>
+                <font color="#000080"><b>Trầu cau</b></font><br>
+                <img src="traucau.jpg" align="left" width="100" style="margin-right: 10px;" alt="Trầu cau">
+                Tình yêu là gì? Là ta yêu một người mỗi ngày trong một năm. Mỗi năm trong một đời người...
+                <div style="clear: both;"></div>
+            </td>
+        </tr>
+        
+        <!-- Dòng 4 -->
+        <tr>
+            <td>
+                <font color="#000080"><b>Xây dựng hạnh phúc gia đình qua những bữa cơm hàng ngày</b></font><br>
+                <img src="giadinh.jpg" align="left" width="100" style="margin-right: 10px;" alt="Gia đình">
+                Nói đến hạnh phúc gia đình chúng ta thường mô tả bằng những từ thật đẹp đẽ và được thể hiện qua những giá trị đạo đức rất đáng trân trọng như tình yêu, lòng chung thuỷ, tình nghĩa vợ chồng, lòng yêu thương, hy sinh cho con cái, sự quý trọng, hiếu đễ của con cháu với cha mẹ, ông bà...
+                <div style="clear: both;"></div>
+            </td>
+        </tr>
+
+        <!-- Dòng 5: Tiêu đề Sức khỏe -->
+        <tr>
+            <td class="section-title">
+                <a name="suckhoe"><font color="white">Sức khỏe</font></a>
+            </td>
+        </tr>
+        
+        <!-- Dòng 6 -->
+        <tr>
+            <td>
+                <font color="#000080"><b>10 lời khuyên trong dinh dưỡng</b></font><br>
+                <img src="dinhduong.jpg" align="left" width="100" style="margin-right: 10px;" alt="Dinh dưỡng">
+                Cơ thể chúng ta cần nhiều chất dinh dưỡng từ nhiều nguồn lương thực khác nhau. Vì vậy chúng ta nên thay đổi các loại lương thực khác nhau. Chúng ta không cần kiêng cữ gì - quan trọng là chú ý đến số lượng...
+                <div style="clear: both;"></div>
+            </td>
+        </tr>
+
+        <!-- Dòng 7 -->
+        <tr>
+            <td>
+                <font color="#000080"><b>Làm sao để bỏ thuốc lá?</b></font><br>
+                <img src="thuocla.jpg" align="left" width="100" style="margin-right: 10px;" alt="Thuốc lá">
+                Sức khoẻ của chính bạn. Không hút thuốc lá tức là giảm thiểu đáng kể rủi ro mắc các loại bệnh ung thư và sức khoẻ sẽ tăng lên đáng kể so với khi còn hút thuốc.
+                <div style="clear: both;"></div>
+                <div class="back-to-top"><a href="#vedau">Về đầu trang</a></div>
+            </td>
+        </tr>
+
+        <!-- Dòng 8: Tiêu đề Du lịch -->
+        <tr>
+            <td class="section-title">
+                <a name="dulich"><font color="white">Du lịch</font></a>
+            </td>
+        </tr>
+
+        <!-- Dòng 9 -->
+        <tr>
+            <td>
+                <font color="#000080"><b>Các tour mới nhất</b></font>
+                <ul>
+                    <li>Côn Minh - Đại Lý - Lệ Giang</li>
+                    <li>Đến Macau xem casino</li>
+                    <li>Về Cà mau ăn tôm tít</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Dòng 10 -->
+        <tr>
+            <td>
+                <font color="#000080"><b>Các điểm du lịch nổi tiếng trên thế giới</b></font>
+                <ul>
+                    <li>Đảo Bali xinh đẹp - Indonesia</li>
+                    <li>Thành cổ Rome và tháp nghiêng Pisa</li>
+                    <li>Vạn Lý Trường Thành</li>
+                </ul>
+                <div class="back-to-top"><a href="#vedau">Về đầu trang</a></div>
+            </td>
+        </tr>
+
+        <!-- Dòng 11: Tiêu đề Ẩm thực -->
+        <tr>
+            <td class="section-title">
+                <a name="amthuc"><font color="white">Ẩm thực</font></a>
+            </td>
+        </tr>
+
+        <!-- Dòng 12 -->
+        <tr>
+            <td>
+                <img src="lau.jpg" align="right" width="120" style="margin-left: 10px;" alt="Lẩu">
+                <ul>
+                    <li>Các món ăn mới trong tuần</li>
+                    <li>Chuyên mục dạy nấu ăn</li>
+                    <li>Món ngon Hà Nội</li>
+                    <li>Các món ăn dân dã ở miền Tây</li>
+                </ul>
+                <div style="clear: both;"></div>
+            </td>
+        </tr>
+
+        <!-- Dòng 13: Tiêu đề Âm nhạc -->
+        <tr>
+            <td class="section-title">
+                <a name="amnhac"><font color="white">Âm nhạc</font></a>
+            </td>
+        </tr>
+
+        <!-- Dòng 14 -->
+        <tr>
+            <td>
+                <img src="nhatky.jpg" align="right" width="100" style="margin-left: 10px;" alt="Âm nhạc">
+                <font color="#000080"><b>Nhạc thiếu nhi</b></font>
+                <ul>
+                    <li>Nắng sân trường</li>
+                    <li>Mẹ yêu không nào</li>
+                    <li>Ba bà đi bán lợn con</li>
+                </ul>
+                <div style="clear: both;"></div>
+            </td>
+        </tr>
+
+        <!-- Dòng 15 -->
+        <tr>
+            <td>
+                <img src="notnhac.jpg" align="right" width="80" style="margin-left: 10px;" alt="Nốt nhạc">
+                <font color="#000080"><b>Dân ca</b></font>
+                <ul>
+                    <li>Bèo dạt mây trôi</li>
+                    <li>Mười thương</li>
+                    <li>Lý cây bông</li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="back-to-top"><a href="#vedau">Về đầu trang</a></div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
