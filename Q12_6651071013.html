@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+    
+    <script>
+        function xuLyDangKy() {
+            document.getElementById("lblThongBao").innerText = "Bạn đã đăng ký thành công!!!";
+        }
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px;">
+
+    <form id="frmKhuyenMai">
+        <table border="1" cellpadding="6" cellspacing="0" align="center" style="border-collapse: collapse; background-color: #e2f0d9; border-color: #a6c9e2; width: 450px;">
+            
+            <tr>
+                <td colspan="2" align="center">
+                    <h3 style="color: #2e7d32; margin: 10px 0;">Phiếu đăng ký tham gia chương trình khuyến mãi</h3>
+                </td>
+            </tr>
+
+            <!-- 1. Họ và tên -->
+            <tr>
+                <td width="40%">Họ và tên</td>
+                <td width="60%">
+                    <input type="text" id="txtHoTen" style="width: 90%;">
+                </td>
+            </tr>
+
+            <!-- 2. Địa chỉ -->
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    <input type="text" id="txtDiaChi" style="width: 90%;">
+                </td>
+            </tr>
+
+            <!-- 3. Điện thoại -->
+            <tr>
+                <td>Điện thoại</td>
+                <td>
+                    <input type="text" id="txtDienThoai" style="width: 90%;">
+                </td>
+            </tr>
+
+            <!-- 4. Phái -->
+            <tr>
+                <td>Phái</td>
+                <td>
+                    <input type="radio" id="radNam" name="radGioiTinh" value="Nam">
+                    <label for="radNam">Nam</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="radNu" name="radGioiTinh" value="Nữ">
+                    <label for="radNu">Nữ</label>
+                </td>
+            </tr>
+
+            <!-- 5. Nghề nghiệp -->
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select id="cboNgheNghiep">
+                        <option value="">-- Chọn nghề nghiệp --</option>
+                        <option value="Bác sĩ">Bác sĩ</option>
+                        <option value="Kỹ sư">Kỹ sư</option>
+                        <option value="Giáo viên">Giáo viên</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- 6. Chọn sản phẩm tham gia -->
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select id="lstSanPham" multiple size="4" style="width: 80%;">
+                        <option value="Kem đánh răng">Kem đánh răng</option>
+                        <option value="Bột giặt">Bột giặt</option>
+                        <option value="Dầu gội đầu">Dầu gội đầu</option>
+                        <option value="Sữa tắm">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- 7. Số người dự đoán tham gia -->
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td>
+                    <input type="text" id="txtDuDoan" style="width: 60%;">
+                </td>
+            </tr>
+
+            <!-- 8. Nút Đồng ý -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" id="btnDongY" value="Đồng ý" onclick="xuLyDangKy()">
+                </td>
+            </tr>
+
+            <!-- 9. Thông báo -->
+            <tr>
+                <td colspan="2" align="center">
+                    <div id="lblThongBao" style="color: red; font-weight: bold; min-height: 20px;"></div>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
