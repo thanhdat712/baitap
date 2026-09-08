@@ -1,38 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <!-- Sử dụng tag <title> theo yêu cầu -->
     <title>Bài tập tổng hợp</title>
     <style>
         body { font-family: Arial, sans-serif; }
         table { border-collapse: collapse; width: 800px; margin: 0 auto; }
         td { border: 1px solid #ccc; padding: 10px; vertical-align: top; }
-        .menu-link { text-decoration: none; color: blue; }
+
+        /* Tùy chỉnh Header */
+        .header-box {
+            position: relative;
+            height: 125px;
+            /* Ảnh nền nốt nhạc */
+            background-image: url('https://rescovn.com/website/image/ir.attachment/1172_fec0071/datas');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #0055A5;
+        }
+
+        /* Ảnh Love bên trái */
+        .header-left-img {
+            width: 85px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Định dạng chữ tiêu đề */
+        .header-title {
+            color: #0B559B;
+            font-family: "Arial", sans-serif;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .header-title .text-large {
+            font-size: 38px;
+        }
+
+        .header-title .text-medium {
+            font-size: 28px;
+        }
+
+        /* Ảnh thắc mắc bên phải */
+        .header-right-img {
+            height: 105px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Định dạng nội dung bài viết */
+        .menu-link { text-decoration: none; color: #0000cc; font-size: 14px; }
         .menu-link:hover { text-decoration: underline; }
-        .section-title { background-color: #0055A5; color: white; font-weight: bold; padding: 5px; }
-        .back-to-top { text-align: right; font-size: 14px; margin-top: 10px; }
-        ul { list-style-type: circle; }
+        .section-title { background-color: #0055A5; color: white; font-weight: bold; padding: 5px 10px; }
+        .back-to-top { text-align: right; font-size: 13px; margin-top: 10px; }
+        .back-to-top a { color: #0000cc; text-decoration: underline; }
+        ul { list-style-type: circle; margin: 5px 0; padding-left: 20px; }
     </style>
 </head>
 <body>
 
     <table>
-        <!-- Dòng 1: Tiêu đề và hình ảnh -->
+        <!-- Dòng 1: Header trang web -->
         <tr>
-            <td colspan="2" style="position: relative; height: 120px; border: none;">
-                <!-- Đánh dấu vị trí đầu trang -->
+            <td colspan="2" style="padding: 0;">
                 <a name="vedau"></a>
-                <!-- Tag <img> với các thuộc tính theo hướng dẫn giải -->
-                <img src="banner.jpg" align="left" style="z-index:-1; position:absolute; top:0; left:0; width: 100%; height: 100%;" alt="Banner Ai? Cái gì? Ở đâu?">
+                <div class="header-box">
+                    <!-- Ảnh trái -->
+                    <img class="header-left-img" src="https://media.istockphoto.com/id/1053171358/vector/love-word-hand-drawn-lettering-modern-calligraphy-grunge-vector-illustration-design-for-print.jpg?s=612x612&w=0&k=20&c=QuayGjH9VJYl9LWrBA1xfaXE_zIrK01zt_BStgw4lU0=" alt="Love icon">
+                    
+                    <!-- Tiêu đề ở giữa -->
+                    <div class="header-title">
+                        <span class="text-large">Ai?</span>
+                        <span class="text-medium"> Cái gì? Ở đâu? ...</span>
+                    </div>
+
+                    <!-- Ảnh phải -->
+                    <img class="header-right-img" src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-hand-drawn-cartoon-boys-question-free-map-image_1315400.jpg" alt="Question icon">
+                </div>
             </td>
         </tr>
 
-        <!-- Dòng 2: Menu trái và Tiêu đề Tình yêu -->
+        <!-- Dòng 2: Menu trái & Tiêu đề Tình yêu -->
         <tr>
-            <!-- Ô bên trái chứa menu, gộp 14 dòng còn lại -->
             <td rowspan="14" width="25%">
-                <ul style="list-style-type: circle; padding-left: 20px;">
+                <ul>
                     <li><a href="#tinhyeu" class="menu-link">Tình yêu và gia đình</a></li>
                     <li><a href="#suckhoe" class="menu-link">Sức khỏe</a></li>
                     <li><a href="#dulich" class="menu-link">Du lịch</a></li>
@@ -40,7 +98,6 @@
                     <li><a href="#amnhac" class="menu-link">Âm nhạc</a></li>
                 </ul>
             </td>
-            <!-- Ô bên phải: Bắt đầu nội dung chi tiết -->
             <td class="section-title">
                 <a name="tinhyeu"><font color="white">Tình yêu và gia đình</font></a>
             </td>
