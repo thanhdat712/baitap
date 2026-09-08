@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Tiêu đề cửa sổ theo yêu cầu -->
+    <title>Tạo form và các điều khiển trên form</title>
+    
+    <script>
+        // Xử lý chức năng khi nhấn nút "Đồng ý"
+        function xuLyDongY() {
+            // Lấy giá trị từ ô "Mã người dùng" và gán vào thẻ div (điều khiển nhãn)
+            var maNguoiDung = document.getElementById("txtUser").value;
+            document.getElementById("lblOutput").innerText = maNguoiDung;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Tạo Form -->
+    <form id="frmLogin">
+        <!-- Tiêu đề form -->
+        <h2 style="color: #8B2252; text-align: center; margin-bottom: 10px;">Đăng nhập</h2>
+
+        <!-- Bảng biểu gồm 4 dòng 2 cột -->
+        <table border="1" cellpadding="5" cellspacing="0" align="center" style="border-collapse: collapse;">
+            <!-- Dòng 1: Mã người dùng -->
+            <tr>
+                <td><label for="txtUser">Mã người dùng:</label></td>
+                <td>
+                    <input type="text" id="txtUser" name="txtUser">
+                </td>
+            </tr>
+
+            <!-- Dòng 2: Mật khẩu -->
+            <tr>
+                <td><label for="txtPass">Mật khẩu:</label></td>
+                <td>
+                    <input type="password" id="txtPass" name="txtPass">
+                </td>
+            </tr>
+
+            <!-- Dòng 3: Nút Đồng ý -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" id="btnSubmit" value="Đồng ý" onclick="xuLyDongY()">
+                </td>
+            </tr>
+
+            <!-- Dòng 4: Nhãn xuất nội dung Mã người dùng -->
+            <tr>
+                <td colspan="2" align="center">
+                    <div id="lblOutput" style="color: blue; font-weight: bold; min-height: 20px;"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

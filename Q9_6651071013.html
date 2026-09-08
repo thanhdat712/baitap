@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng, trộn dòng và cột</title>
+</head>
+<body style="font-family: Tahoma, sans-serif; font-size: 12px;">
+
+    <!-- Tiêu đề trang -->
+    <h1 style="color: #CC0033; text-align: center;">Chương trình học - ngành lập trình</h1>
+
+    <!-- Bảng biểu -->
+    <table border="1" bordercolor="#D3A27F" cellpadding="5" cellspacing="0" align="center" style="border-collapse: collapse; width: 80%; max-width: 700px;">
+        
+        <!-- Dòng tiêu đề 1 -->
+        <tr bgcolor="#CC0033" style="color: #FFFFFF; font-weight: bold;" align="center">
+            <td rowspan="2" width="25%">Nhóm học phần</td>
+            <td rowspan="2" width="45%">Môn học</td>
+            <td colspan="2" width="30%">Số tiết</td>
+        </tr>
+        
+        <!-- Dòng tiêu đề 2 -->
+        <tr bgcolor="#CC0033" style="color: #FFFFFF; font-weight: bold;" align="center">
+            <td>Lý thuyết</td>
+            <td>Thực hành</td>
+        </tr>
+
+        <!-- Nhóm I: Tin học văn phòng (gồm 6 môn học => rowspan = 6) -->
+        <tr>
+            <td rowspan="6" align="center" style="color: #A52A2A;">
+                I<br>Tin học văn phòng
+            </td>
+            <td>Hệ điều hành Windows</td>
+            <td align="center">3</td>
+            <td align="center">5</td>
+        </tr>
+        <tr>
+            <td>Sử dụng Internet</td>
+            <td align="center">3</td>
+            <td align="center">5</td>
+        </tr>
+        <tr>
+            <td>Soạn thảo văn bản với MS Word</td>
+            <td align="center">24</td>
+            <td align="center">40</td>
+        </tr>
+        <tr>
+            <td>Tạo bài trình diễn với MS PowerPoint</td>
+            <td align="center">9</td>
+            <td align="center">15</td>
+        </tr>
+        <tr>
+            <td>Xử lý số liệu với MS Excel</td>
+            <td align="center">24</td>
+            <td align="center">40</td>
+        </tr>
+        <tr>
+            <td>Tạo trang Web với MS FrontPage</td>
+            <td align="center">9</td>
+            <td align="center">15</td>
+        </tr>
+
+        <!-- Nhóm II: Kỹ thuật lập trình (gồm 2 môn học => rowspan = 2) -->
+        <tr>
+            <td rowspan="2" align="center" style="color: #A52A2A;">
+                II<br>Kỹ thuật lập trình (VB.NET)
+            </td>
+            <td>Nhập môn lập trình</td>
+            <td align="center">36</td>
+            <td align="center">60</td>
+        </tr>
+        <tr>
+            <td>Kỹ thuật lập trình</td>
+            <td align="center">36</td>
+            <td align="center">60</td>
+        </tr>
+
+        <!-- Dòng cuối cùng (gộp 4 cột => colspan = 4) -->
+        <tr>
+            <td colspan="4">.....</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
